@@ -10,6 +10,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class UserLoginController {
     @RequestMapping(value = "/")
     public String index(){
-        return "file"; // 此时会跳转到 resources/file.html文件下
+        return "index"; // 此时会跳转到 resources/file.html文件下
     }
 }
