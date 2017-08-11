@@ -47,6 +47,7 @@
           <element id="library" level="project" name="Maven: org.codehaus.groovy:groovy:2.4.11" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot:1.5.4.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-autoconfigure:1.5.4.RELEASE" />
+          <element id="library" level="project" name="Maven: commons-net:commons-net:2.0" />
         </element>
       </element>
       <element id="directory" name="META-INF">

@@ -79,7 +79,6 @@ public class TestCollections {
 
 
 
-
         list.add(szObject);
         list.add(szObject2);
         list.add(szObject3);
