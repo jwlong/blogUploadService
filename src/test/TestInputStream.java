@@ -58,10 +58,7 @@ public class TestInputStream {
         if(rwFile !=null ){
             rwFile.close();
         }
-
         // test2
-
-
     }
 
 }

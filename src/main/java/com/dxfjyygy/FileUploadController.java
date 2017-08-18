@@ -6,10 +6,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
+import java.io.*;
 
 /**
  * Created by longjinwen on 22/07/2017.
@@ -31,8 +28,19 @@ public class FileUploadController {
         //存放的文件放在F盘上
         String storePath = "F://springBootRes";
         try {
-            FileInputStream in = (FileInputStream) file.getInputStream();
-           // FileOutputStream os = new FileOutputStream(file);
+            InputStream in = file.getInputStream();
+            // create new file
+            String  filePath = storePath+"/"+file.getOriginalFilename();
+            File storeFile = new File(filePath);
+            if(!storeFile.exists()){
+                storeFile.createNewFile();
+            }
+            BufferedOutputStream os = new BufferedOutputStream(new FileOutputStream(storeFile));
+            int cha = 0;
+            while ((cha= in.read()) != -1){
+                os.write(cha);
+            }
+
         } catch (IOException e) {
             e.printStackTrace();
         }

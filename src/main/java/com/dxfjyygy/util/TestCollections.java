@@ -14,8 +14,12 @@ public class TestCollections {
         for(SZObject szObject : szObjects){
             System.out.println(szObject.getGroup()+","+szObject.getSize()+","+szObject.getSort());
         }
+        List<SZObject>  normalList = new ArrayList<SZObject>(szObjects);
         System.out.println("After sort:....");
         sortData(szObjects);
+
+        System.out.println("After sort: copy data....");
+        print(normalList);
     }
 
     public static List<SZObject>  initData(){
@@ -121,6 +125,7 @@ public class TestCollections {
         int tmp = 0;
 //        SZObject  minObject = oldList.get(0);
 //        oldList.remove(minObject);
+
         Collections.sort(oldList,new DigitComparator());
 //        for(SZObject szObject:oldList){
 //            int x = szObject.getSort();
