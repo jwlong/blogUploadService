@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <meta charset="UTF-8" />
+    <title>Main</title>
+</head>
+<body>
+<h1> Success!</h1>
+
+<p>loginId is: <span th:text="${user.loginId}"></span></p>
+<p>JSON result is: <span th:text="${user.resultJson}"></span></p>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <meta charset="UTF-8" />
+    <title>Login</title>
+</head>
+<body>
+<form action="login" method="post">
+    <p> LoginId:<input type="text" name="loginId" /></p>
+    <p>Password:<input type="password" name="password" /></p>
+    <p> MainProgram:<input type="text" name="ProgramId" /></p>
+    <p>SubProgarm: <input type="text" name="SubProgramId"/></p>
+    <p>FormatCode:<input type="text" name="FormatCode"/></p>
+    <p>FormatVersion:<input type="text" name="FormatVersion"/></p>
+    <p><input type="submit" value="Submit" /></p>
+</form>
+</body>
+</html>
