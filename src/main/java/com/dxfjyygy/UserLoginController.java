@@ -10,6 +10,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class UserLoginController {
     @RequestMapping(value = "/")
     public String index(){
-        return "index"; // 此时会跳转到 resources/file.html文件下
+        return "index"; // 此时会跳转到 resources/index.html文件下
+    }
+    @RequestMapping("/helloReact")
+    public String helloReactJs(){
+        return "demo02/index";
+    }
+
+    @RequestMapping("/webpackTest")
+    public String webpackTest(){
+        return "demo02/test";
     }
 }
